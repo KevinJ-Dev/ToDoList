@@ -1,0 +1,29 @@
+.td-list{
+    background-color: #ffffff;
+}
+
+.form__field{
+    text-align: center;
+}
+
+.td-title{
+    text-align: center;
+}
+
+#search{
+    color: #489cc1;
+}
+
+.searchButton{
+    background-color: #489cc1;
+}
+
+.i{
+    background-color: #ffffff;
+}
+
+.remove{
+    background-color: #489cc1;
+    color: #ffffff;
+    float: right;
+}
