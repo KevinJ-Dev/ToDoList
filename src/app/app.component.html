@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/6.1.1/css/font-awesome.min.css"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-<div class="td-list">
-    <div class="td-body">
-        <h1 class="td-title">TODOLIST</h1>
-        <div class="grid">
-            <form action="" method="get" class="search">
-                <div class="form__field">
-                    <input type="text" placeholder="what needs to be done?" class="form__input">
-                    <button type="submit" class="searchButton"><i class="fa fa-plus plus-color"></i></button>
-                    <p>M</p>
-                    <p>M</p>
-                    <button type="submit" class="remove">Remove checked X</button>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-md-12">
+                <div class="card px-3">
+                    <div class="card-body">
+                        <h1 class="card-title">TODOLIST</h1>
+                        <div class="add-items d-flex"> <input type="text" class="form-control todo-list-input placeholder-text" placeholder="what needs to be done?"> <button class="add btn btn-primary font-weight-bold todo-list-add-btn">+</button> </div>
+                        <div class="list-wrapper">
+                            <ul class="d-flex flex-column-reverse">
+                                <li>
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> TOTO <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked=""> Tata <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                                </li>
+                            </ul>
+                            <button class="btn btn-tdol btn btn-primary font-weight-bold">Remove checked</button>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
